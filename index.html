@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CIVIC SAFE - Hỗ trợ học sinh kiểm chứng thông tin pháp luật Việt Nam.">
+  <title>CIVIC SAFE - Kiểm chứng thông tin pháp luật</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="app">
+      <div class="brand-mark" aria-hidden="true">§</div>
+      <p class="eyebrow">TRỢ LÝ KIỂM CHỨNG PHÁP LUẬT</p>
+      <h1>CIVIC <span>SAFE</span></h1>
+      <p class="intro">
+        Nhập đường dẫn hoặc nội dung bạn muốn kiểm chứng.
+        CIVIC SAFE sẽ hỗ trợ phân tích thông tin và đối chiếu căn cứ pháp luật Việt Nam.
+      </p>
+
+      <form id="check-form">
+        <label for="user-input">Đường dẫn hoặc nội dung cần kiểm chứng</label>
+        <textarea id="user-input" maxlength="12000"
+          placeholder="Ví dụ: Người chưa đủ 18 tuổi thì không phải chịu trách nhiệm pháp lý..."
+          required></textarea>
+        <div class="input-meta">
+          <span>Hỗ trợ văn bản hoặc URL công khai</span>
+          <span id="counter">0/12.000</span>
+        </div>
+        <button id="submit-btn" type="submit">
+          <span id="button-label">Gửi để kiểm chứng</span>
+          <span aria-hidden="true">→</span>
+        </button>
+      </form>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <section id="result-section" class="result hidden">
+        <div class="result-heading">
+          <span class="result-icon">✓</span>
+          <h2>Kết quả phân tích</h2>
+        </div>
+        <div id="result-content" class="result-content"></div>
+      </section>
+
+      <p class="disclaimer">
+        Lưu ý: CIVIC SAFE chỉ hỗ trợ học tập, không thay thế văn bản pháp luật
+        chính thức hoặc tư vấn của người có chuyên môn. Kết quả AI cần được
+        giáo viên/người có chuyên môn kiểm tra trước khi sử dụng.
+      </p>
+    </section>
+    <footer>© 2026 CIVIC SAFE · Hiểu đúng luật, sống an toàn</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
